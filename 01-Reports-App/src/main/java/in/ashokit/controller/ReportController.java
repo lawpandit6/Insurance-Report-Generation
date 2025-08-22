@@ -19,6 +19,11 @@ public class ReportController {
 	@Autowired
 	private ReportService service;
 	
+	@GetMapping("/excel")
+	public void exportExcel() throws Exception {
+		service.exportExcel();
+	}
+	
 	@PostMapping("/search")
 	public String handleSearch(@ModelAttribute("search") SearchRequest search , Model model) {
 		

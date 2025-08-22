@@ -13,7 +13,7 @@ public interface ReportService {
 	
 	public List<CitizenPlan> search(SearchRequest request);
 	
-	public boolean exportExcel();
+	public boolean exportExcel() throws Exception;
 	
 	public boolean exportPdf();
 }

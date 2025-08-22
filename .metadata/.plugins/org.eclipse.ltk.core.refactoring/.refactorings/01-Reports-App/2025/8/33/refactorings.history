@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;header&apos; in &apos;in.ashokit.service.ReportServiceImpl.exportExcel()&apos; to &apos;headerRow&apos;&#x0D;&#x0A;- Original project: &apos;01-Reports-App&apos;&#x0D;&#x0A;- Original element: &apos;in.ashokit.service.ReportServiceImpl.exportExcel().header&apos;&#x0D;&#x0A;- Renamed element: &apos;header&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;header&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;in.ashokit.service{ReportServiceImpl.java[ReportServiceImpl~exportExcel@header!1940!1971!1944!1949!QRow;!0!false" name="headerRow" references="true" stamp="1755347321334" version="1.0"/>
+</session>

@@ -52,13 +52,14 @@
 				<tr>
 					<td><input type="submit" class="btn btn-primary"
 						value="search"></td>
-						
-					<td><a href="/" class="btn btn-secondry">Reset</a></td>
+
+					<td><a href="/"><button type="button"
+								class="btn btn-secondary">Reset</button></a></td>
 				</tr>
 			</table>
 
-			<hr>
-			<table>
+			<hr class="border-4 border-success " />
+			<table class="table table-striped table-hover">
 				<thead>
 					<tr>
 						<th>S.No</th>
@@ -75,7 +76,7 @@
 
 					<c:forEach items="${plans}" var="plans" varStatus="index">
 						<tr>
-							<td>${index.connt}</td>
+							<td>${index.count}</td>
 							<td>${plans.citizenName}</td>
 							<td>${plans.gender}</td>
 							<td>${plans.planName}</td>
@@ -85,17 +86,18 @@
 					</c:forEach>
 					<tr>
 
-						<c:if test="${empty plans}"></c:if>
-						<td colspan="7" style="text-align: center;">No Record Found</td>
+						<c:if test="${empty plans}">
+							<td colspan="7" style="text-align: center;">No Record Found</td>
+						</c:if>
 					</tr>
 
 				</tbody>
 
 			</table>
-			<hr>
+			<hr class="border-4 border-success"/>
 			
-			Export: <a href="">Excel</a>
-			<a href="">Pdf</a>
+			Export: <a href="/excel"><button type="button" class="btn btn-outline-success m-2">Excel</button></a>
+			<a href=""><button type="button" class="btn btn-outline-danger">PDF</button></a>
 		</form:form>
 	</div>
 
